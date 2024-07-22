@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data</title>
+    <link rel="stylesheet" href="DATA.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="ecosenselogo.png" alt="ecosenselogo" class="logo" />
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="homepage.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="data.html" class="nav-link">Data</a>
+          </li>
+          <li class="nav-item">
+            <a href="process.html" class="nav-link">Process</a>
+          </li>
+          <li class="nav-item"><a href="why.html" class="nav-link">Why?</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="maincontainer">
+        <h1>
+          Electricity Consumption and Costs in Indian Educational Institutions
+        </h1>
+        <p>
+          <strong>
+            India generates approximately 1,229 trillion kWh of electricity
+            annually, with educational institutions consuming nearly 5% of this
+            total. The costs associated with running educational institutions.
+          </strong>
+        </p>
+        <div class="images-container">
+          
+          
+        </div>
+        <h2>Cost Estimates for Running an Engineering Institute</h2>
+        <ul>
+          <li>
+            <strong>Average Annual Tuition Fee</strong>: INR 1.25 Lakhs to INR 2
+            Lakhs.
+          </li>
+          <li>
+            <strong>Operational Costs (e.g., infrastructure, faculty)</strong>:
+            INR 50,000 to INR 1 Lakh.
+          </li>
+          <li>
+            <strong>Research, Development, and Innovation Costs</strong>: INR
+            20,000 to INR 50,000.
+          </li>
+        </ul>
+
+        <p><strong>Estimated Annual Cost per Student:</strong></p>
+        <ul>
+          <li>
+            <strong>Basic Costs</strong>: INR 1.35 Lakhs to INR 3.5 Lakhs.
+          </li>
+          <li>
+            <strong>Comprehensive Costs</strong>: INR 2.45 Lakhs to INR 4.5
+            Lakhs.
+          </li>
+        </ul>
+
+        <p>
+          <strong>Total Annual Cost for an Engineering Institute</strong>
+          (assuming 500 to 1000 students):
+        </p>
+        <ul>
+          <li>
+            <strong>Lower Estimate</strong>: INR 67.5 Lakhs to INR 4.5 Crores.
+          </li>
+          <li>
+            <strong>Higher Estimate</strong>: INR 1.22 Crores to INR 4.5 Crores.
+          </li>
+        </ul>
+
+        <h2>Electricity Consumption Challenges in Indian colleges</h2>
+        <ul>
+          <li>
+            <strong>Electricity Expenditure</strong>: Schools typically spend 2%
+            to 4% of their total budget on electricity (Source: “Average
+            colleges Electricity Bill: How Much Do colleges Pay?”, February
+            2024).
+          </li>
+          <li>
+            <strong>Phantom Power Consumption</strong>: Standby power
+            consumption, where appliances are left plugged in but not in use,
+            represents about 5% of monthly electricity consumption (Source: “In
+            India, how much electricity is wasted in not switching off
+            gadgets/appliances…”, February 2022).
+          </li>
+        </ul>
+
+        <h2>Estimating Potential Electricity Waste</h2>
+        <p>
+          Given an average monthly electricity expenditure of ₹9 lakhs for a
+          engineering Colleges, Applying a 5% phantom power consumption rate to
+          this figure, the estimated waste due to standby power in these unused
+          classrooms is approximately ₹45,000.
+        </p>
+        <div class="content-container">
+            <div class="text-content">
+                <h2>Project Overview: Enhancing Energy Efficiency in Educational Institutions</h2>
+                <p>The core objective of this project is to significantly reduce electricity consumption in educational institutions by integrating advanced sensor technologies to control lighting and temperature based on human presence. This initiative employs both infrared and motion-detecting sensors to optimize energy usage, ensuring that resources are utilized only when necessary.</p>
+
+                <h3>Sensor Technologies and Their Functions</h3>
+                <p>To achieve this goal, the project utilizes two primary types of sensors: mmWave and Passive Infrared (PIR) sensors.</p>
+                <ul>
+                    <li><strong>mmWave Sensors:</strong> These sensors are highly effective in detecting even the slightest movements and can accurately identify human presence. They operate by emitting a high-frequency electromagnetic wave and then analyzing the reflected wave to determine the presence and movement of objects within a space.</li>
+                    <li><strong>PIR Sensors:</strong> PIR sensors detect infrared radiation emitted by humans. When a person enters the sensor’s field of view, the sensor detects the change in infrared radiation levels and signals the presence of a person. These sensors are highly sensitive and reliable for motion detection.</li>
+                </ul>
+
+                <h3>System Architecture and Functionality</h3>
+                <p>The sensors are integrated with microcontrollers, such as the Arduino UNO, to process the data they collect. Here's how the system works:</p>
+                <ol>
+                    <li><strong>Detection and Data Collection:</strong> The mmWave and PIR sensors are strategically placed within rooms to maximize coverage. These sensors continuously monitor the space for human presence and movement.</li>
+                    <li><strong>Data Processing:</strong> The sensors send their data to the Arduino UNO microcontroller. The Arduino processes this information in real-time, determining whether a room is occupied or vacant. Based on the presence or absence of people, the microcontroller then toggles the lights and adjusts the room temperature to optimal levels.</li>
+                    <li><strong>Advanced Control Options:</strong> While the current setup uses Arduino UNO, there are plans to upgrade to more powerful microcontrollers like Raspberry Pi or ESP32. These advanced microcontrollers offer greater processing power, more memory, and enhanced connectivity options, allowing for more sophisticated data handling and control capabilities.</li>
+                    <li><strong>Data Transmission and Display:</strong> Once the data is processed, it is transmitted to a web server. This is crucial for monitoring and analysis purposes. The web server aggregates data from all sensors across the institution, providing a comprehensive overview of energy usage patterns and occupancy trends.</li>
+                    <li><strong>Web Interface:</strong> The collected data is displayed on a user-friendly web interface. This interface allows administrators to view real-time and historical data on room occupancy and energy consumption. The visual representation of data aids in making informed decisions about energy management and further optimizing the system.</li>
+                </ol>
+
+                <h3>Benefits and Future Enhancements</h3>
+                <ul>
+                    <li><strong>Energy Savings:</strong> By ensuring lights and temperature control systems are only active when rooms are occupied, the project significantly reduces unnecessary electricity usage. This can lead to substantial cost savings and a reduction in the institution’s carbon footprint.</li>
+                    <li><strong>Scalability:</strong> The system is designed to be scalable, allowing for easy integration of additional sensors and microcontrollers as needed. This ensures that the system can grow with the institution’s needs.</li>
+                    <li><strong>Enhanced Control:</strong> The planned upgrade to Raspberry Pi or ESP32 microcontrollers will provide more advanced control features. These microcontrollers offer better computational capabilities and can support more complex algorithms for energy management.</li>
+                    <li><strong>Data-Driven Decisions:</strong> The web interface provides actionable insights based on collected data. Administrators can use this information to make data-driven decisions, further enhancing the efficiency of the energy management system.</li>
+                </ul>
+            </div>
+            <h1>Conclusion</h1>
+            <p>The analysis of electricity consumption and costs in Indian educational institutions highlights significant financial implications, with engineering institutes incurring substantial operational expenses. On average, these institutions allocate 2% to 4% of their budget to electricity, which can translate to a significant portion of their overall costs. Notably, phantom power consumption accounts for approximately 5% of monthly electricity usage, resulting in considerable wastage.</p>
+            
+            <p>By implementing a project focused on reducing standby power consumption through the use of thermal and motion detection sensors to regulate and toggle lights and temperature, an average engineering college can potentially save around ₹270,000 annually. This savings is derived from mitigating the ₹45,000 per month wastage due to standby power in unused classrooms.</p>
+            
+            <p>In addition to the financial benefits, the project also presents substantial energy savings. By curbing unnecessary electricity usage, the project can save approximately 114.467 Gigawatts of electricity annually. Such initiatives not only contribute to cost efficiency but also support sustainability efforts, demonstrating the importance and impact of energy-saving measures in educational institutions.</p>
+        </section>
+      </section>
+    </main>
+
+    <section class="blankspace"></section>
+
+    <footer class="footer" id="footer">
+      <a
+        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTLGztqwwRsxFXdfqdfMxgqJgHdVbFBkclTgBzZqGNLHsSKCfzNxcXtZmwJWttdNLSGqdV"
+        target="_blank"
+        >Contact Us</a
+      >
+    </footer>
+  </body>
+</html>
